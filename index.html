@@ -23,21 +23,21 @@
   
       <div class="name-input-div">
         <div class="first-name-div">
-          <p class="p-first-name">First Name <span class="star-span">*</span></p>
-          <input type="text" class="first-name-input input">
+          <label class="p-first-name" for="first-name">First Name <span class="star-span">*</span></label>
+          <input type="text" class="first-name-input input" id="first-name">
           <span class="error-first-name error-span">This field is required</span>
         </div>
   
         <div class="last-name-div">
-          <p class="p-last-name">Last Name <span class="star-span">*</span></p>
-          <input type="text" class="last-name-input input">
+          <label for="last-name" class="p-last-name">Last Name <span class="star-span">*</span></label>
+          <input type="text" class="last-name-input input" id="last-name">
           <span class="error-last-name error-span">This field is required</span>
         </div>
       </div>
   
       <div class="email-input-div">
-        <p class="p-email">Email Address <span class="star-span">*</span></p>
-        <input type="text" class="email-input input">
+        <label for="email" class="p-email">Email Address <span class="star-span">*</span></label>
+        <input type="text" class="email-input input" id="email">
         <span class="error-email-empty-span error-span">This field is required</span>
         <span class="error-email-invalid-span error-span">Please enter a valid email address</span>    
       </div>
@@ -47,8 +47,8 @@
   
         <div class="inputs-labels">
           <div class="general-enquiry-input-div radio-input-div">
-            <input type="radio" class="query-type-input input-radio" name="query" id="general-enquiry" value="General Enquiry>
-            <label for="query-type">General Enquiry</label>
+            <input type="radio" class="query-type-input input-radio" name="query" id="general-enquiry" value="General Enquiry">
+            <label for="general-enquiry">General Enquiry</label>
           </div>
   
           <div class="support-request-input-div radio-input-div">
@@ -61,7 +61,7 @@
       </div>
   
       <div class="mesage-div">
-        <p class="p-message">Message <span class="star-span">*</span></p>
+        <label for="text-field" class="p-message">Message <span class="star-span">*</span></label>
   
         <textarea name="message" id="text-field"></textarea>
   
@@ -72,7 +72,7 @@
         <div class="consent-box">
           <input type="checkbox" name="" id="consent-check">
   
-          <p>I consent to being contacted by the team <span class="star-span">*</span></p>
+          <label for="consent-check">I consent to being contacted by the team <span class="star-span">*</span></label>
         </div>
         
         <span class="error-consent-not-checked-span error-span">To submit this form, please consent to being contacted</span>
